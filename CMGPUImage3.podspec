@@ -65,12 +65,11 @@ An open source macOS/iOS framework for GPU-based image and video processing. Thi
   #
 
   # spec.platform     = :ios, "11.00"
-  spec.platform     = :osx, "10.13"
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :osx, "10.11"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "11.0"
-  # spec.osx.deployment_target = "10.11"
+  spec.osx.deployment_target = "10.11"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
   spec.swift_version = "5.0"
@@ -92,8 +91,8 @@ An open source macOS/iOS framework for GPU-based image and video processing. Thi
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "CMGPUImage3", "CMGPUImage3/**/*.{h,swift}"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
