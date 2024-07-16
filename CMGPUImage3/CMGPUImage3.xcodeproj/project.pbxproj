@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA676AF52C467571006840A9 /* CMLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA676AF42C467571006840A9 /* CMLibrary.swift */; };
 		EAC6118C2C46370B00D01C8E /* CMGPUImage3.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC6118B2C46370B00D01C8E /* CMGPUImage3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA676AF42C467571006840A9 /* CMLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMLibrary.swift; sourceTree = "<group>"; };
 		EAC611882C46370B00D01C8E /* CMGPUImage3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMGPUImage3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC6118B2C46370B00D01C8E /* CMGPUImage3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMGPUImage3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC6118B2C46370B00D01C8E /* CMGPUImage3.h */,
+				EA676AF42C467571006840A9 /* CMLibrary.swift */,
 			);
 			path = CMGPUImage3;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					EAC611872C46370B00D01C8E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA676AF52C467571006840A9 /* CMLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,7 @@
 		EAC611902C46370B00D01C8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -274,6 +280,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
@@ -281,6 +288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -288,6 +296,7 @@
 		EAC611912C46370B00D01C8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -305,6 +314,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
